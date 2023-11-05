@@ -111,8 +111,8 @@
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="/" class="nav-link px-2">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 link-secondary">Submission</a></li>
-                    <li><a href="#" class="nav-link px-2">Todo List</a></li>
+                    <li><a href="/pages/submission/" class="nav-link px-2 link-secondary">Submission</a></li>
+                    <li><a href="/pages/todolist/" class="nav-link px-2">Todo List</a></li>
                     <li><a href="#" class="nav-link px-2">FAQs</a></li>
                     <li><a href="#" class="nav-link px-2">About</a></li>
                 </ul>
@@ -150,20 +150,23 @@
                                         class="fa-solid fa-pencil"></i> Edit</button>
                                 <button class="btn btn-success" id="done-button"><i class="fa-solid fa-check"></i>
                                     Done</button>
-                                <button class="btn btn-primary"><i class="fa-solid fa-info"></i> Info</button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal"><i
+                                        class="fa-solid fa-info"></i> Info</button>
                             </td>
                         </tr>
                         <tr>
                             <td id=""><i class="fa-solid fa-circle " style="color: green;"></i></td>
                             <th scope="row">FDS (Fundamentals of Data Structures)</th>
                             <td id="fds-total-assignments">3</td>
-                            <td id="fds-completed-assignments">0</td>
-                            <td id="fds-pending-assignments">3</td>
+                            <td id="fds-completed-assignments">3</td>
+                            <td id="fds-pending-assignments">0</td>
                             <td>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editModal"><i
                                         class="fa-solid fa-pencil"></i> Edit</button>
-                                <button class="btn btn-success"><i class="fa-solid fa-check"></i> Done</button>
-                                <button class="btn btn-primary"><i class="fa-solid fa-info"></i> Info</button>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal"><i
+                                        class="fa-solid fa-check"></i> Done</button>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal"><i
+                                        class="fa-solid fa-info"></i> Info</button>
                             </td>
                         </tr>
                         <!-- Add more subjects here -->
@@ -256,6 +259,24 @@
                             Add</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infoModalLabel">Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
